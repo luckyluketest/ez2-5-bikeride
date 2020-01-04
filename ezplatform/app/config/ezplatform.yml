@@ -45,8 +45,15 @@ ezpublish:
                 purge_servers: ['%purge_server%']
                 varnish_invalidate_token: '%varnish_invalidate_token%'
 
-        #site_group:
+        site_group:
         #    design: main
+            content_view:
+                full:
+                    home_page:
+                        template: full/home_page.html.twig
+                        match:
+                            Id\Location: 2
+
 
         admin_group:
             # System languages. Note that by default, content, content types, and other data are in eng-GB locale,
