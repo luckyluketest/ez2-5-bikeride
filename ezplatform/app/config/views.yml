@@ -1,0 +1,18 @@
+ezpublish:
+    system:
+        site_group:
+            content_view:
+                full:
+                    ride:
+                        template: full/ride.html.twig
+                        match:
+                            Identifier\ContentType: ride
+                    home_page:
+                        template: full/home_page.html.twig
+                        match:
+                            Id\Location: 2
+                line:
+                    ride:
+                        template: line/ride.html.twig
+                        match:
+                            Identifier\ContentType: ride
