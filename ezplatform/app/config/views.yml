@@ -21,3 +21,7 @@ ezpublish:
                         template: line/landmark.html.twig
                         match:
                             Identifier\ContentType: landmark
+            user_registration:
+                templates:
+                  form: user/registration_form.html.twig
+                  confirmation: 'user/registration_confirmation.html.twig'
