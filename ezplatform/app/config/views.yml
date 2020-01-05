@@ -5,6 +5,7 @@ ezpublish:
                 full:
                     ride:
                         template: full/ride.html.twig
+                        controller: AppBundle:Ride:viewRideWithLandmarks
                         match:
                             Identifier\ContentType: ride
                     home_page:
@@ -16,3 +17,7 @@ ezpublish:
                         template: line/ride.html.twig
                         match:
                             Identifier\ContentType: ride
+                    landmark:
+                        template: line/landmark.html.twig
+                        match:
+                            Identifier\ContentType: landmark
