@@ -1,0 +1,16 @@
+DomainGroupContentTypes:
+    type: object
+    config:
+        fields:
+            article:
+                type: ArticleContentType
+                resolve: '@=resolver("ContentType", [{"identifier": "article"}])'
+            folder:
+                type: FolderContentType
+                resolve: '@=resolver("ContentType", [{"identifier": "folder"}])'
+            landmark:
+                type: LandmarkContentType
+                resolve: '@=resolver("ContentType", [{"identifier": "landmark"}])'
+            ride:
+                type: RideContentType
+                resolve: '@=resolver("ContentType", [{"identifier": "ride"}])'

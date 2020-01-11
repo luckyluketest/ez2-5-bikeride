@@ -1,0 +1,29 @@
+RideContentType:
+    type: object
+    inherits:
+        - BaseDomainContentType
+    config:
+        interfaces:
+            - DomainContentType
+        fields:
+            name:
+                type: TextLineFieldDefinition
+                resolve: '@=value.getFieldDefinition("name")'
+            photo:
+                type: FieldDefinition
+                resolve: '@=value.getFieldDefinition("photo")'
+            description:
+                type: FieldDefinition
+                resolve: '@=value.getFieldDefinition("description")'
+            startingPoint:
+                type: FieldDefinition
+                resolve: '@=value.getFieldDefinition("starting_point")'
+            endingPoint:
+                type: FieldDefinition
+                resolve: '@=value.getFieldDefinition("ending_point")'
+            length:
+                type: IntegerFieldDefinition
+                resolve: '@=value.getFieldDefinition("length")'
+            landmarks:
+                type: RelationListFieldDefinition
+                resolve: '@=value.getFieldDefinition("landmarks")'

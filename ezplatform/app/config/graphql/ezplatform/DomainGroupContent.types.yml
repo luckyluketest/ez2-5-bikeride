@@ -1,0 +1,73 @@
+DomainGroupContent:
+    type: object
+    inherits:
+        - DomainContentTypeGroup
+    config:
+        fields:
+            _types:
+                type: DomainGroupContentTypes
+                resolve: {  }
+            articles:
+                type: ArticleContentConnection
+                description: 'No description available'
+                resolve: '@=resolver("SearchContentOfTypeAsConnection", ["article", args])'
+                argsBuilder: 'Relay::Connection'
+                args:
+                    query: { type: ContentSearchQuery, description: 'A Content query used to filter results' }
+                    sortBy: { type: '[SortByOptions]', description: 'A sort clause, or array of clauses. Add _desc after a clause to reverse it' }
+            article:
+                type: ArticleContent
+                description: 'No description available'
+                resolve: '@=resolver("DomainContentItem", [args, "article"])'
+                args:
+                    id: { type: Int, description: 'A article content id' }
+                    remoteId: { type: String, description: 'A article content remote id' }
+                    locationId: { type: Int, description: 'A article content location id' }
+            folders:
+                type: FolderContentConnection
+                description: 'No description available'
+                resolve: '@=resolver("SearchContentOfTypeAsConnection", ["folder", args])'
+                argsBuilder: 'Relay::Connection'
+                args:
+                    query: { type: ContentSearchQuery, description: 'A Content query used to filter results' }
+                    sortBy: { type: '[SortByOptions]', description: 'A sort clause, or array of clauses. Add _desc after a clause to reverse it' }
+            folder:
+                type: FolderContent
+                description: 'No description available'
+                resolve: '@=resolver("DomainContentItem", [args, "folder"])'
+                args:
+                    id: { type: Int, description: 'A folder content id' }
+                    remoteId: { type: String, description: 'A folder content remote id' }
+                    locationId: { type: Int, description: 'A folder content location id' }
+            landmarks:
+                type: LandmarkContentConnection
+                description: 'No description available'
+                resolve: '@=resolver("SearchContentOfTypeAsConnection", ["landmark", args])'
+                argsBuilder: 'Relay::Connection'
+                args:
+                    query: { type: ContentSearchQuery, description: 'A Content query used to filter results' }
+                    sortBy: { type: '[SortByOptions]', description: 'A sort clause, or array of clauses. Add _desc after a clause to reverse it' }
+            landmark:
+                type: LandmarkContent
+                description: 'No description available'
+                resolve: '@=resolver("DomainContentItem", [args, "landmark"])'
+                args:
+                    id: { type: Int, description: 'A landmark content id' }
+                    remoteId: { type: String, description: 'A landmark content remote id' }
+                    locationId: { type: Int, description: 'A landmark content location id' }
+            rides:
+                type: RideContentConnection
+                description: 'No description available'
+                resolve: '@=resolver("SearchContentOfTypeAsConnection", ["ride", args])'
+                argsBuilder: 'Relay::Connection'
+                args:
+                    query: { type: ContentSearchQuery, description: 'A Content query used to filter results' }
+                    sortBy: { type: '[SortByOptions]', description: 'A sort clause, or array of clauses. Add _desc after a clause to reverse it' }
+            ride:
+                type: RideContent
+                description: 'No description available'
+                resolve: '@=resolver("DomainContentItem", [args, "ride"])'
+                args:
+                    id: { type: Int, description: 'A ride content id' }
+                    remoteId: { type: String, description: 'A ride content remote id' }
+                    locationId: { type: Int, description: 'A ride content location id' }
