@@ -17,9 +17,9 @@ ezpublish:
 
     # Siteaccess configuration, with one siteaccess per default
     siteaccess:
-        list: [site, admin]
+        list: [site, admin, fr]
         groups:
-            site_group: [site]
+            site_group: [site, fr]
 
             # WARNING: Do not remove or rename this group.
             # It's used to distinguish common siteaccesses from admin ones.
@@ -70,6 +70,11 @@ ezpublish:
 
         site:
             languages: [eng-GB]
+
+        fr:
+            languages:
+                - fra-CA
+                - eng-GB
 
     url_alias:
         slug_converter:
