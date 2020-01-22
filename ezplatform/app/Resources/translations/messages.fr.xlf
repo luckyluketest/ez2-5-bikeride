@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+    <file source-language="fr" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="1">
+                <source>List of all Rides</source>
+                <target>Liste de tous les parcours</target>
+            </trans-unit>
+            <trans-unit id="2">
+                <source>Ride</source>
+                <target>Parcous</target>
+            </trans-unit>
+            <trans-unit id="3">
+                <source>From</source>
+                <target>De</target>
+            </trans-unit>
+            <trans-unit id="4">
+                <source>To</source>
+                <target>À</target>
+            </trans-unit>
+            <trans-unit id="5">
+                <source>Starting point</source>
+                <target>Point de départ</target>
+            </trans-unit>
+            <trans-unit id="6">
+                <source>Ending point</source>
+                <target>Point d'arrivée</target>
+            </trans-unit>
+            <trans-unit id="7">
+                <source>Landmarks</source>
+                <target>Lieux emblématiques</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
