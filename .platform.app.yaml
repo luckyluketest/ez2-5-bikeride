@@ -9,6 +9,10 @@
 # The name of this app. Must be unique within a project.
 name: app
 
+dependencies:
+    nodejs:
+      yarn: "*"
+
 # The type of the application to build.
 type: php:7.2
 build:
