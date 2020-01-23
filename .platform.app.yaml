@@ -47,6 +47,7 @@ mounts:
     "/ezplatform/var/cache": "shared:files/cache"
     "/ezplatform/var/logs": "shared:files/logs"
     "/ezplatform/web/var": "shared:files/files"
+    "/ezplatform/web/var/encore": "shared:files/encore"
     # Uncomment if you want to use DFS clustering:
     #"/dfsdata": "shared:files/dfsdata"
 
