@@ -44,29 +44,11 @@ disk: 2048
 
 # The mounts that will be performed when the package is deployed.
 mounts:
-# https://github.com/ezsystems/ezplatform/blob/master/.platform.app.yaml
-    'var/cache':
-        source: local
-        source_path: cache
-    'var/logs':
-        source: local
-        source_path: logs
-    'var/sessions':
-        source: local
-        source_path: sessions
-    'var/encore':
-        source: local
-        source_path: encore
-    'web/var':
-        source: local
-        source_path: var
-    'config/graphql/types/ezplatform':
-        source: local
-        source_path: graphql_types
-
-#    "/ezplatform/var/cache": "shared:files/cache"
-#    "/ezplatform/var/logs": "shared:files/logs"
-#    "/ezplatform/web/var": "shared:files/files"
+# see https://github.com/ezsystems/ezplatform/blob/master/.platform.app.yaml 
+# to fix?
+    "/ezplatform/var/cache": "shared:files/cache"
+    "/ezplatform/var/logs": "shared:files/logs"
+    "/ezplatform/web/var": "shared:files/files"
     # Uncomment if you want to use DFS clustering:
     #"/dfsdata": "shared:files/dfsdata"
 
