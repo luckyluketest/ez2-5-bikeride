@@ -118,7 +118,6 @@ runtime:
         - xsl
         - imagick
         - readline
-        - msgpack
         - redis
         #- apcu
         #- name: 'blackfire'
