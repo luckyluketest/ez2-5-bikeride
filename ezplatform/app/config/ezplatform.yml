@@ -7,6 +7,10 @@ ezpublish:
     http_cache:
         purge_type: '%purge_type%'
 
+    locale_conversion:
+        eng-GB: en_GB
+        fra-CA: fr_CA
+
     # Repositories configuration, setup default repository to support solr if enabled
     repositories:
         default:
@@ -17,14 +21,15 @@ ezpublish:
 
     # Siteaccess configuration, with one siteaccess per default
     siteaccess:
-        list: [site, admin, fr]
+        list: [site, admin, fr, en]
         groups:
-            site_group: [site, fr]
+            site_group: [site, fr, en]
 
             # WARNING: Do not remove or rename this group.
             # It's used to distinguish common siteaccesses from admin ones.
             # In case of multisite with multiple admin panels, remember to add any additional admin siteaccess to this group.
             admin_group: [admin]
+
         default_siteaccess: site
         match:
             URIElement: 1
@@ -51,6 +56,8 @@ ezpublish:
 
         # site_group:
         #    design: main
+        site_group:
+            translation_siteaccesses: [fr, en]
 
         admin_group:
             # System languages. Note that by default, content, content types, and other data are in eng-GB locale,
@@ -69,6 +76,9 @@ ezpublish:
                 media: /1/43/
 
         site:
+            languages: [eng-GB]
+
+        en:
             languages: [eng-GB]
 
         fr:

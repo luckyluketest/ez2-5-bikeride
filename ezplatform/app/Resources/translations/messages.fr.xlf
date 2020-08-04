@@ -30,6 +30,10 @@
                 <source>Landmarks</source>
                 <target>Lieux emblématiques</target>
             </trans-unit>
+            <trans-unit id="8">
+                <source>Discover new rides! Go Bike!</source>
+                <target>Discover new rides! Go Bike! (fr)</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>

@@ -4,23 +4,23 @@
         <body>
             <trans-unit id="1">
                 <source>List of all Rides</source>
-                <target>List of all Rides</target>
+                <target>List of all Rides (en)</target>
             </trans-unit>
             <trans-unit id="2">
-                <source>Ride</source>
-                <target>Ride</target>
+                <source>Ride (en)</source>
+                <target>Ride (en)</target>
             </trans-unit>
             <trans-unit id="3">
                 <source>From</source>
-                <target>From</target>
+                <target>From (en)</target>
             </trans-unit>
             <trans-unit id="4">
                 <source>To</source>
-                <target>To</target>
+                <target>To (en)</target>
             </trans-unit>
             <trans-unit id="5">
                 <source>Starting point</source>
-                <target>Starting point</target>
+                <target>Starting point (en)</target>
             </trans-unit>
             <trans-unit id="6">
                 <source>Ending point</source>
@@ -28,8 +28,13 @@
             </trans-unit>
             <trans-unit id="7">
                 <source>Landmarks</source>
-                <target>Landmarks</target>
+                <target>Landmarks (en)</target>
             </trans-unit>
+            <trans-unit id="8">
+                <source>Discover new rides! Go Bike!</source>
+                <target>Discover new rides! Go Bike! (en)</target>
+            </trans-unit>
+
         </body>
     </file>
 </xliff>
